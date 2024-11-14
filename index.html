@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GARABATOS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Contenedor principal -->
+    <div>
+        <!-- Título y descripción -->
+        <h1>Drausi</h1>
+        <p>Comunidad y cuaderno de bocetos</p>
+        <p>
+            Dibuja en cualquier lugar ahora.<br> 
+            <span class="small-text">Proyecto en construcción.</span>
+        </p>
+    </div>
+
+    <!-- Canvas para dibujar -->
+    <canvas id="drawingBoard"></canvas>
+
+    <!-- Herramientas de dibujo -->
+    <div id="controls">
+        <!-- Selector de color -->
+        <input type="color" id="colorPicker" value="#000000">
+
+        <!-- Barra de tamaño -->
+        <input type="range" id="brushSize" min="1" max="20" value="5">
+    </div>
+    
+    <!-- Botones "Qué es" y "Limpiar" en la esquina inferior izquierda -->
+    <div id="buttons">
+        <button id="aboutButton">Qué es</button>
+        <button id="clearCanvas">Limpiar</button>
+    </div>
+
+    <!-- Agrega una imagen de patrón para el pincel -->
+    <img id="brushPattern" src="long.jpg" style="display:none;">
+
+    <script src="script.js"></script>
+</body>
+</html>
